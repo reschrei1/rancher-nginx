@@ -12,7 +12,7 @@ docker build -t marcqualie/rancher-nginx .
 
 ```
 docker run -d --restart=always -p 8080:8080 --name rancher-server rancher/server:v0.59.1
-docker run -d --restart=alwats -p 80:80 -p 443:443 --link rancher-server --name rancher-nginx marcqualie/rancher-nginx
+docker run -d --restart=always -p 80:80 -p 443:443 --link rancher-server --name rancher-nginx marcqualie/rancher-nginx
 ```
 
 ## Debug
